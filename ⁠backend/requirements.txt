@@ -1,3 +1,4 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 fastapi==0.109.0
 uvicorn==0.27.0
 python-telegram-bot==20.7
@@ -5,7 +6,7 @@ yt-dlp>=2024.3.10
 aiofiles==23.2.1
 python-multipart==0.0.9
 Pillow>=10.3.0
+torch
+torchvision
 realesrgan
 opencv-python-headless
-numpy==1.26.3
-requests==2.31.0

@@ -8,5 +8,7 @@ python-multipart==0.0.9
 Pillow>=10.3.0
 torch
 torchvision
+tb-nightly
+git+https://github.com/XPixelGroup/BasicSR.git
 realesrgan
 opencv-python-headless

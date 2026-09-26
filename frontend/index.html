@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Downloader - تحميل 4K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 AI Downloader</h1>
+        <p class="subtitle">حمّل الفيديوهات والصور بأعلى جودة 4K</p>
+        
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="... الصق الرابط هنا">
+            <button onclick="download()" id="dlBtn">تحميل</button>
+        </div>
+        
+        <div class="quality-selector">
+            <label><input type="radio" name="quality" value="4k" checked> 4K</label>
+            <label><input type="radio" name="quality" value="1080p"> 1080p</label>
+            <label><input type="radio" name="quality" value="720p"> 720p</label>
+            <label><input type="radio" name="quality" value="audio"> صوت فقط MP3</label>
+        </div>
+        
+        <div id="status" class="status"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[phases.install]
+cmds = [
+  'pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu',
+  'pip install --no-build-isolation -r backend/requirements.txt'
+]

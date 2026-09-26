@@ -1,0 +1,62 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.container {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+h1 { text-align: center; font-size: 2.2rem; margin-bottom: 8px;
+     background: linear-gradient(90deg, #00d4ff, #ff00ea);
+     -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { text-align: center; color: #aaa; margin-bottom: 30px; }
+.input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+input[type="url"] {
+    flex: 1; padding: 14px; border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.3); color: #fff; font-size: 1rem;
+}
+input[type="url"]:focus { outline: none; border-color: #00d4ff; }
+button {
+    padding: 14px 28px; border: none; border-radius: 12px;
+    background: linear-gradient(90deg, #00d4ff, #ff00ea);
+    color: #fff; font-weight: bold; cursor: pointer;
+    transition: transform 0.2s;
+}
+button:hover { transform: scale(1.05); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.quality-selector { display: flex; gap: 15px; margin: 20px 0;
+                     flex-wrap: wrap; justify-content: center; }
+.quality-selector label { cursor: pointer; padding: 8px 16px;
+    border-radius: 20px; background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+.quality-selector input { margin-left: 6px; }
+.enhance-toggle { display: block; text-align: center; margin: 15px 0;
+                  cursor: pointer; color: #ffd700; }
+#status { text-align: center; margin: 20px 0; min-height: 24px;
+          color: #00d4ff; }
+#result { text-align: center; }
+#result a {
+    display: inline-block; padding: 14px 30px; margin-top: 15px;
+    background: #00d4ff; color: #000; border-radius: 12px;
+    text-decoration: none; font-weight: bold;
+}
+@media (max-width: 480px) {
+    .container { padding: 24px 20px; }
+    h1 { font-size: 1.6rem; }
+    .input-group { flex-direction: column; }
+    .quality-selector { gap: 8px; }
+}

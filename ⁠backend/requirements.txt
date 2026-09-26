@@ -9,3 +9,4 @@ realesrgan
 opencv-python-headless
 numpy==1.26.3
 requests==2.31.0
+

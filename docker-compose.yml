@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  api:
+    build: ./backend
+    ports: ["8000:8000"]
+    volumes: ["./downloads:/app/downloads"]
+    command: uvicorn app:app --host 0.0.0.0
+  bot:
+    build: ./backend
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    command: python bot.py
